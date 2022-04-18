@@ -1,0 +1,11 @@
+delimiter $$
+
+CREATE TABLE `contact` (
+  `Number` int(11) NOT NULL,
+  `Name` varchar(45) NOT NULL,
+  `emailId` varchar(45) DEFAULT NULL,
+  `Date_Of_Birth` date DEFAULT NULL,
+  PRIMARY KEY (`Number`),
+  UNIQUE KEY `Name_UNIQUE` (`Name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
+
